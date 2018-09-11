@@ -1,0 +1,16 @@
+
+  <div *ngFor="let m of convers"[ngStyle]="{'background-color': m.id == 2 ? 'antiquewhite' : 'rgb(147, 192, 153)' }">
+        <label class="messags">User{{m.id}}: {{m.msg}}</label>
+      </div>
+    
+    
+    
+    <div class="bottom-b">
+      <div class="input-group">
+        <input [(ngModel)]="msg" type="text" class="form-control">
+        <button (click)="sendMsg(msg)" class="btn btn-secondary" type="button">
+          send
+        </button>
+    
+      </div>
+    </div>
